@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+/* setting body to flex in other to accommondaate all divs (segments) of the webpage */
+body{
+    display: flex;
+}
+
+
+/* Sidebar designs start here */
+.sidebar{
+    background-color: #262629;
+    width: 20%;
+    height: 90vh;
+    padding-right: 30px;
+}
+
+/* Menu lists and icons (under sidebar) designs start here */
+.menutext{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px auto;
+}
+
+h2{
+    color: #0C9159;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+ul li a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+
+a .i{
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+/* hover effect of the above menu list */
+ul li:hover .i img{
+    background-color: #0C9159; 
+    border-radius: 10px;
+}
+
+/* applying the same hover effect to the list span to make it whole */
+ul li:hover span{
+    color: #0C9159;
+}
+
+ul{
+   margin-left: 20%;
+}
+
+.hafricklogo{
+    display: inline-flex;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* Webpage logo located in sidebar designed here */
+/* sidebar design ends here as well */
+.hafricklogo img{
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* main Header segment design starts here */
+.main{
+    background-color: #171719;
+    width: 100%;
+}
+
+.headerbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+
+
+.headerbar i{
+    position: relative;
+    right: -4.5%;
+    color: #9898A0;
+    font-size: 18px;
+    line-height: 24px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.search{
+    position: relative;
+    width: 100%;
+    color: #9898A0;
+}
+
+input[type="search"]{
+    padding: 10px 16px; 
+    background: #262629; 
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    width: 500px;
+}
+
+label{
+    font-size: 16px;
+    position: relative;
+    top: -25px;
+    left: 50px;
+    cursor: pointer;
+}
+
+input:focus{
+    outline-style: none;
+    padding-left: 40px;
+    color: #fff;
+}
+
+input:focus ~ label{
+    position: relative;
+    opacity: -5;
+}
+.song{
+    position: relative;
+    left: -50%;
+    top: 0%;
+}
+
+/* profile part of the Header segment design start here */
+.profile{
+    display: inline-flex;
+    font-size: 16px; 
+    font-weight: 600; 
+    line-height: 24px; 
+    word-wrap: break-word;
+    width: 50%; 
+    height: 100%; 
+    justify-content: flex-end; 
+    align-items: flex-end; 
+    margin: auto;
+    color: #fff;
+    padding: 0px 50px;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.pf2{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 10px;
+    height: 100%;
+}
+
+.hr{
+    border: 1px solid #9898A0;
+    height: 25px;
+}
+
+/* Featre music design goes here */
+.mlogo{
+    z-index: 40;
+    position: absolute;
+    top: 3%;
+    right: 12%;
+}
+
+.eliipse{
+    z-index: 40;
+    position: absolute;
+    top: 90%;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.eliipse:nth-child(3){
+    opacity: 1;
+}
+
+.slider{
+    display: flex;
+    width: 1003px; 
+    height: 314px; 
+    position: relative;
+    overflow: hidden;
+    margin: 5px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider img{
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-clip: padding-box;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.slider .l1{
+    position: absolute;
+    width: 709px; 
+    height: 300px; 
+    left: 0px; 
+    top: 32px; 
+    /* background: linear-gradient(360deg, #262629 0%, rgba(38, 38, 41, 0) 100%);  */
+    border-radius: 7.34px;
+}
+
+.slider .r1{
+    width: 709px; 
+    height: 240px; 
+    right: 0px; 
+    top: 32px; 
+    position: absolute;
+    /* background: linear-gradient(360deg, #262629 0%, rgba(38, 38, 41, 0) 100%);  */
+    border-radius: 7.34px;
+}
+
+.slider .l2{
+    width: 741px; 
+    height: 272px; 
+    left: 40px; 
+    top: 18px; 
+    position: absolute; 
+    /* background: linear-gradient(360deg, #262629 0%, rgba(38, 38, 41, 0) 100%);  */
+    border-radius: 7.34px;
+    z-index: 2;
+}
+
+.slider .r2{
+    width: 741px; 
+    height: 272px; 
+    right: 40px; 
+    top: 18px; 
+    position: absolute; 
+    background: linear-gradient(360deg, #262629 0%, rgba(38, 38, 41, 0) 100%); 
+    border-radius: 7.34px;
+    z-index: 2;
+}
+
+.slider .center{
+    width: 831px; 
+    height: 304px; 
+    left: 85px; 
+    top: 0px; 
+    position: absolute; 
+    background: linear-gradient(360deg, #0D1926 0%, rgba(38, 38, 41, 0) 100%); 
+    border-radius: 7.34px;
+    z-index: 4;
+}
+
+/* Recommended segment starts here with cards-wrapper */
+.recommended{
+    width: 1100px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.recommended h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    word-wrap: break-word;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.cards-wrapper{
+    display: inline-flex;
+    padding: 5px 40px;
+    gap: 24px;
+    justify-content: flex-start;
+    overflow: hidden;
+    align-items: center;
+}
+
+/* Playerbar/Footer start here */
+.player{
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 90vh;
+    z-index: 100;
+    background-color: #56565D;
+    width: 100%;
+}
+
+.djmix{
+    display: flex;
+    padding: 8px;
+}
+
+.djtext{
+    display: inline-flex;
+    margin-left: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+}
+
+.control{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.control span{
+    background-color: #9898A0;
+    mix-blend-mode: multiply;
+    height: 4px;
+    line-height: 0px;
+    cursor: pointer;
+}
+
+
+
+.extras{
+    display: inline-flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.extras div{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.play{
+    background-color: #0C9159;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.extras div .gg{
+    margin-top: 10px;
+}

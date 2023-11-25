@@ -1,0 +1,6 @@
+<svg width="192" height="4" viewBox="0 0 192 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Track">
+<rect id="Background" width="192" height="4" rx="2" fill="#56565D"/>
+<path id="Active" d="M0 2C0 0.895431 0.895431 0 2 0H48V4H2C0.895431 4 0 3.10457 0 2Z" fill="#14F195"/>
+</g>
+</svg>
